@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="description" content="PQG">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+<style>
+body{background:hsla(140, 85%, 47%, 0.336);
+    margin:0
+}
+.form{
+    width:440px;
+    height:840px;
+    background:#e6e6e6;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #c91111;
+    margin:calc(50vh - 220px) auto;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+    position:relative
+}
+h2{
+
+    margin:10px 0;
+    padding-bottom:10px;
+    width:180px;
+    color:#050580;
+    border-bottom:3px solid #e94117
+}
+input{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'Montserrat',sans-serif;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2
+}
+input:focus{
+    border-bottom:2px solid #0404b9
+}
+p:before{
+    content:attr(type);
+    display:block;
+    margin:28px 0 0;font-size:14px;
+    color:#ca1616
+}
+
+    
+
+.boton{
+    
+    float:right;
+    padding:15px 32px;
+    margin:8px 0 0;
+    font-family:'Montserrat',sans-serif;
+    border-radius:15%;
+    background:0;color:#1313b6;
+    cursor:pointer;
+    transition:all .3s
+    
+}
+button:hover{
+
+    background:pink;
+    color:#fff
+}
+div{
+    content:'Hi';
+    position:absolute;
+    bottom:-15px;right:-20px;
+    
+    color:#fff;
+    width:320px;
+    padding:16px 4px 16px 0;
+    border-radius:6px;
+    font-size:13px;
+    box-shadow:10px 10px 40px -14px #cf1313
+}
+[type=":checkedbox"]{display: none;}
+label{
+    padding-left: 1.3em;
+    position: relative;
+}
+label:before{
+
+    border-radius: 3xp;
+    width: .8em;
+    height: .8em;
+    position: absolute;
+}
+
+
+</style>
+  </head>
+  <body>
+    <form action="processar.php" method="get" class="form">
+        <h2>Formulario de registro-Mi web</h2>
+        <p type="Nombre:"><input placeholder="Escribe tu nombre aquí.." min="50" name="nombre"></input></p>
+        <p type="Apellidos:"><input placeholder="Escriba sus apellidos aqui..." min="50" name="apellidos"></input></p>
+        <p type="Email:"><input placeholder="Email para que te contactemos.." min="50" name="Email"></input></p>
+        <p type="Mensage:"><input placeholder="Que deseas saber.." min="50" name="Mensage"></input></p>
+       
+        <p>Masculino <INPUT TYPE="RADIO" NAME="clase" VALUE="Masculino"> 
+        Femenino <INPUT TYPE="RADIO" NAME="clase" VALUE="Femenino"></p>
+            <p type="Poblacion":><SELECT NAME="Poblacion">
+                <OPTION>Orizaba
+                <OPTION>C&oacute;rdoba
+                <OPTION>Xalapa
+                <OPTION>Veracruz
+              </SELECT></p>
+
+            Deseo recibir información sobre novedades y ofertas <INPUT TYPE="CHECKBOX" NAME="tipo" VALUE="1">
+            Declaro haber leído y aceptar las condiciones generales del programa y la normava sobre proteccion 
+            de datos <INPUT TYPE="CHECKBOX" NAME="tipo" VALUE="2">
+            Deseo recibir información sobre novedades y ofertas <INPUT TYPE="CHECKBOX" NAME="tipo" checked>    
+        
+        <button class="boton" type="submit" value="Enviar">Enviar</button>
+       
+      </form>
+  </body>
+</html>
